@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fetch JSON Data</title>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is a sample paragraph.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024, Michael
-</p>
-    </footer>
-    <script src="script.js"></script>
+    <h1>Fetch Data and Display Table</h1>
+    <button id="syncBtn">Synchronous XMLHttpRequest</button>
+    <button id="asyncBtn">Asynchronous XMLHttpRequest</button>
+    <button id="fetchBtn">Fetch with Promises</button>
+
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </body>
 </html>
-<!-- 
-Implement a solution for fetching and displaying the data. The requirements are as follows:
-Assume that the names of the files data1.json and data2.json are not known in advance (you could even use a bash/PowerShell script to randomly modify the names to something unexpected!).
-The names of the files reference.json and data3.json are known.
-All the data from the three files need to be fetched and processed. 
-The processing needs to be performed on the data from each file separately, as soon as they are fetched. 
-Then the data need to be stiched together in the right order (data1, data2, data3) and displayed in a table.
-The processing should produce entries with separate name and surname and id (three properties in all).
-Repeat the implementation three times using the following approaches:
-XMLHttpRequest used synchronously
-XMLHttpRequest used asynchronously with callbacks
-fetch() and promises
-The HTML page should have three different buttons, with clicks on each of them invoking one of the implementations.
-Once you are happy that your implementations are working on the local test server, 
-push your files to the GitHub Pages-enabled repository and test them by accessing the HTML page from there.
- -->
-hdjdk
